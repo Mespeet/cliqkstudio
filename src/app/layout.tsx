@@ -16,6 +16,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+      <meta content="Embed Title" property="og:title" />
+      <meta content="Site Description" property="og:description" />
+      <meta content="https://cliqk.studio/" property="og:url" />
+      <meta content="https://cliqk.studio/imgs/logo.png" property="og:image" />
+      <meta content="#8980F5" data-react-helmet="true" name="theme-color" />
+      </head>
       <body className={inter.className}>{children}</body>
     </html>
   );
